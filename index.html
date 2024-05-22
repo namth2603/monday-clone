@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header class="wrapper">
         <div class="content">
-            <button><img class="icon" src="./assets/icons/apps-svgrepo-com.svg" alt=""></button>
-            <a href="#"><img class="logo" src="./assets/images/Mageplaza-logo-new.webp" alt=""></a>
+            <button><img class="icon-l" src="./assets/icons/apps-svgrepo-com.svg" alt=""></button>
+            <a class="company-name" href="#"><img class="logo" src="./assets/images/mageplaza_logo_204515.png" alt="">Mageplaza</a>
         </div>
         <div class="content">
             <button><img class="icon" src="./assets/icons/bell-svgrepo-com.svg" alt=""></button>
@@ -29,14 +30,258 @@
     </header>
     <div class="application">
         <div class="slider">
-            <div class="row">
-                <img class="icon" src="./assets/icons/house-01-svgrepo-com.svg" alt="">
-                <span>Home</span>
+            <div class="slider-header">
+                <button class="primary-button">
+                    <img class="icon" src="./assets/icons/house-01-svgrepo-com.svg" alt="">
+                    <span>Home</span>
+                </button>
+                <button class="primary-button">
+                    <img class="icon" src="./assets/icons/calendar-check-svgrepo-com.svg" alt="">
+                    <span>My work</span>
+                </button>
+            </div>
+            <div class="slider-content">
+                <button class="top-board">
+                    <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                    <h2>All Boards</h2>
+                    <img class="icon" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+                </button>
+
+                <div class="search-board">
+                    <div class="search">
+                        <img class="icon" src="./assets/icons/search-magnifying-glass-svgrepo-com.svg" alt="">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    
+                    <button class="add-button">
+                        <img class="icon" src="./assets/icons/plus-white-large-svgrepo-com.svg" alt="">
+                    </button>
+                </div>
+                <div class="list-board">
+                    <ul>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Sci-sport</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                            
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Sci-sport</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Sci-sport</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Sci-sport</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                            <span>Development Task</span>
+                            <div class="more-action"><img class="icon-s" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-logo-wrapper">
+                    <img src="./assets/images/Mageplaza-logo-new.webp" alt="">
+                </div>
             </div>
         </div>
         <div class="workspace">
+            <div class="header-board">
+                <div class="title-board">
+                    <div class="info">
+                        <span>Development Task</span>
+                        <img class="icon-xl" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
+                <div class="action-board">
+                    <button class="integrate-btn">
+                        <img class="icon" src="./assets/icons/plug-plugin-svgrepo-com.svg" alt="">
+                        <span>Integrate</span>
+                    </button>
+                    <button class="automate-btn">
+                        <img class="icon" src="./assets/icons/robot-svgrepo-com.svg" alt="">
+                        <span>Automate</span>
+                    </button>
+                    <button class="discussion-btn">
+                        <img class="icon" src="./assets/icons/chat-circle-dots-svgrepo-com.svg" alt="">
+                    </button>
+                    <button class="avatar-btn">
+                        <img class="avatar" src="./assets/images/user.jpg" alt="">
+                    </button>
 
+                    <button class="invite-btn">
+                        <span>Invite / </span><span class="member-count">6</span>
+                    </button>
+
+                    <button class="option-btn">
+                        <img class="icon" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+                    </button>
+                    
+                </div>
+                <div class="tab-board">
+                    <ul>
+                        <li class="item active">
+                            <div class="info">
+                                <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon">
+                                <span>Main Table</span>
+                            </div>
+                            
+                            <img class="more-action icon" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+                        </li>
+                        <li class="item">
+                            <div class="info">
+                                <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon">
+                                <span>Main Table</span>
+                            </div>
+                            <img class="more-action icon" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="option-board">
+                    <button class="new-btn-wrapper">
+                        <div class="new-btn">
+                            New item
+                        </div>
+                        <div class="dropdown-btn">
+                            <img class="icon" src="./assets/icons/caret-down-md-svgrepo-com-white.svg" alt="">
+                        </div>
+                    </button>
+                    <div class="option-wrapper">
+                        <button class="search-btn">
+                            <img class="icon" src="./assets/icons/search-magnifying-glass-svgrepo-com.svg" alt="">
+                            <span>Search</span>
+                        </button>
+                        <button class="person-btn">
+                            <img class="icon" src="./assets/icons/person-account-circle-svgrepo-com.svg" alt="">
+                            <span>Person</span>
+                        </button>
+                        <button class="filter-btn-wrapper">
+                            <div class="filter-btn">
+                                <img class="icon" src="./assets/icons/filter-svgrepo-com.svg" alt="">
+                                <span>Filter</span>
+                            </div>
+                            <div class="dropdown-btn">
+                                <img class="icon" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+                            </div>
+                            
+                        </button>
+                        <button class="sort-btn">
+                            <img class="icon" src="./assets/icons/sort-svgrepo-com.svg" alt="">
+                            <span>Sort</span>
+                        </button>
+                        <button class="hide-btn">
+                            <img class="icon" src="./assets/icons/hide-svgrepo-com.svg" alt="">
+                            <span>Hide</span>
+                        </button>
+                        <button class="more-btn">
+                            <img class="icon" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+                        </button>
+                    </div>
+                        
+                </div>
+
+                <div>
+                    <button class="primary-btn">
+                        Hello
+                    </button>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
+<script>
+    $('.list-board .item').on('click',function(){
+        $('.list-board .item').removeClass('active')
+        $(this).addClass('active')
+    })
+
+    $('.option-wrapper button').on('click',function(){
+        $('.option-wrapper button').removeClass('active')
+        $(this).addClass('active')
+    })
+</script>
 </html>
