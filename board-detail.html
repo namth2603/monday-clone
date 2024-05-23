@@ -1,0 +1,193 @@
+<div class="header-board">
+    <div class="title-board">
+        <div class="info primary-btn">
+            <span>Development Task</span>
+            <img class="icon-xl" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+    <div class="action-board">
+        <button class="integrate-btn primary-btn">
+            <img class="icon-l" src="./assets/icons/plug-plugin-svgrepo-com.svg" alt="">
+            <span>Integrate</span>
+        </button>
+        <button class="automate-btn primary-btn">
+            <img class="icon-l" src="./assets/icons/robot-svgrepo-com.svg" alt="">
+            <span>Automate</span>
+        </button>
+        <div class="tooltip-wrapper">
+            <button class="discussion-btn primary-btn tooltip">
+                <img class="icon-l" src="./assets/icons/chat-circle-dots-svgrepo-com.svg" alt="">
+            </button>
+            <span class="tooltip-bottom">Start a Board discussion</span>
+        </div>
+        
+        <button class="avatar-btn primary-btn">
+            <img class="avatar" src="./assets/images/user.jpg" alt="">
+        </button>
+
+        <button class="invite-btn primary-btn">
+            <span>Invite / </span><span class="member-count">6</span>
+        </button>
+
+        <button class="option-btn primary-btn">
+            <img class="icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+        </button>
+        
+    </div>
+    <div class="tab-board">
+        <ul>
+            <li class="item active">
+                <div class="info">
+                    <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon-l">
+                    <span>Main Table</span>
+                </div>
+                
+                <img class="more-action icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+            </li>
+            <li class="item">
+                <div class="info">
+                    <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon-l">
+                    <span>Main Table</span>
+                </div>
+                <img class="more-action icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+            </li>
+        </ul>
+    </div>
+
+    <div class="option-board">
+        <button class="new-btn-wrapper">
+            <div class="new-btn">
+                New item
+            </div>
+            <div class="dropdown-btn">
+                <img class="icon-l" src="./assets/icons/caret-down-md-svgrepo-com-white.svg" alt="">
+            </div>
+        </button>
+        <div class="option-wrapper">
+            <div class="search-wrapper">
+                <label for="search-item"><img class="icon-l" src="./assets/icons/search-magnifying-glass-svgrepo-com.svg" alt=""></label>
+                
+                <input type="text" id="search-item" placeholder="Search">
+            </div>
+            <button class="person-btn primary-btn">
+                <img class="icon-l" src="./assets/icons/person-account-circle-svgrepo-com.svg" alt="">
+                <span>Person</span>
+            </button>
+            <button class="filter-btn-wrapper primary-btn">
+                <div class="filter-btn">
+                    <img class="icon-l" src="./assets/icons/filter-svgrepo-com.svg" alt="">
+                    <span>Filter</span>
+                </div>
+                <div class="dropdown-btn">
+                    <img class="icon-l" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+                </div>
+                
+            </button>
+            <button class="sort-btn primary-btn">
+                <img class="icon-l" src="./assets/icons/sort-svgrepo-com.svg" alt="">
+                <span>Sort</span>
+            </button>
+            <button class="hide-btn primary-btn">
+                <img class="icon-l" src="./assets/icons/hide-svgrepo-com.svg" alt="">
+                <span>Hide</span>
+            </button>
+            <button class="more-btn primary-btn">
+                <img class="icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+            
+    </div>
+</div>
+<div class="content-board">
+    <div id="sort" class="connected-sortable area">
+        <div class="task-wrapper">
+            <div class="task-row">
+                <div class="task-info-wrapper">
+                    <div class="more-action">
+                        <img class="icon-m" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="task-info">
+                        <div class="collapse-btn">
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    <svg class="icon-m" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                </div>
+                                <span class="tooltip-bottom">Collapse</span>
+                            </div>
+                        </div>
+                        <div class="task-name tooltip-wrapper">
+                            <div class="tooltip">
+                                <input type="text" value="Task 1">
+                            </div>
+                            <span class="tooltip-right">Click to Edit</span>
+                        </div>
+                        <div class="summary-info">
+                            <span>20 Items</span>
+                            <span> / </span>
+                            <span>21 Subitems</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="task-column task-person">
+                    person
+                </div>
+                <div class="task-column">status</div>
+                <div class="task-column">deadline</div>
+                <div class="task-column">timetracking</div>
+                <div class="task-column">column</div>
+                <div class="task-column">column</div>
+                <div class="task-column">column</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="add-group-wrapper">
+        <button class="primary-btn">
+            <img class="icon-l" src="./assets/icons/plus-large-svgrepo-com.svg" alt="">
+            <span>Add new group</span>
+        </button>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        function init() {
+            $(".area").sortable({
+            connectWith: ".connected-sortable",
+            stack: '.connected-sortable',
+            update: function(e, ui) {
+                var results = [];
+                $(".cat", this).each(function(i, el) {
+                results.push($(el).text().trim());
+                });
+                console.log(results.toString());
+            }
+            }).disableSelection();
+        }
+        init();
+
+        $('.option-wrapper .primary-btn').on('click',function(){
+            if(!$(this).hasClass('active')){
+                $('.option-wrapper .primary-btn.active').removeClass('active')
+                $(this).addClass('active')
+            }
+        })
+        $('.option-wrapper .search-wrapper input').on("focus blur input", function() {
+            if (isPlaceholderVisible(this)) {
+                $(this).parent().removeClass('has-text')
+            } else {
+                $(this).parent().addClass('has-text')
+            }
+        });
+
+        $('.tab-board .item').on('click',function(){
+            if(!$(this).hasClass('active')){
+                $('.tab-board .item.active').removeClass('active')
+                $(this).addClass('active')
+            }
+        })
+    })
+</script>
