@@ -1,0 +1,72 @@
+<div class="slider">
+    <div class="slider-header">
+        <a href="../index.html" id="home-btn" class="primary-btn padding-10">
+            <img class="icon-l" src="./assets/icons/house-01-svgrepo-com.svg" alt="">
+            <span>Home</span>
+        </a>
+        <a href="../index.html" class="primary-btn padding-10">
+            <img class="icon-l" src="./assets/icons/calendar-check-svgrepo-com.svg" alt="">
+            <span>My work</span>
+        </a>
+    </div>
+    <div class="slider-content">
+        <div class="primary-btn">
+                <img class="icon-l" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                <h2>All Boards</h2>
+                <img class="icon-l dropdown" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+        </div>
+        
+
+        <div class="search-board">
+            <div class="search-wrapper">
+                <label for="search-board"><img class="icon-l" src="./assets/icons/search-magnifying-glass-svgrepo-com.svg" alt=""></label>
+                
+                <input type="text" id="search-board" placeholder="Search">
+            </div>
+            
+            <button class="primary-blue-btn">
+                <img class="icon-l" src="./assets/icons/plus-white-large-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+        <div class="list-board">
+            <ul>
+                <li class="primary-list-item">
+                    <img class="icon-l" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                    <span>Sci-sport</span>
+                    <div class="more-action"><img class="icon-m" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                    
+                </li>
+                <li class="primary-list-item">
+                    <img class="icon-l" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                    <span>Development Task</span>
+                    <div class="more-action"><img class="icon-m" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt=""></div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="company-logo-wrapper">
+            <img src="./assets/images/Mageplaza-logo-new.webp" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+    function isPlaceholderVisible(input) {
+        return $(input).val() === ""
+    }
+
+    $('.list-board .primary-list-item').on('click',function(){
+        if(!$(this).hasClass('active')){
+            $('.list-board .primary-list-item.active').removeClass('active')
+            $(this).addClass('active')
+        }
+    })
+
+    $('.slider-content .search-wrapper input').on("focus blur input", function() {
+        if (isPlaceholderVisible(this)) {
+            $(this).parent().removeClass('has-text')
+        } else {
+            $(this).parent().addClass('has-text')
+        }
+    });
+</script>

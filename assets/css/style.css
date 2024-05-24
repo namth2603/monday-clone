@@ -412,6 +412,7 @@ header .account-info .user-avatar-wrapper {
 }
 .application .slider{
     border-top-right-radius: 8px;
+    height: 100%;
     width: 200px;
     min-width: 200px;
     background-color: white;

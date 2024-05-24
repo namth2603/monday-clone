@@ -94,6 +94,7 @@
     })
 
     $('.board-item .icon-star').on('click',function(){
+        event.preventDefault();
         $(this).toggleClass('fa-star-o fa-star active')
     })
 
