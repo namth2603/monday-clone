@@ -1,0 +1,106 @@
+
+<div class="board-list-wrapper">
+    <div class="board-row">
+        <div class="board-title">
+            <img class="dropdown icon-xm" src="./assets/icons/chevron-down-solid.svg" alt="">
+            <h3>Recently visited</h3>
+        </div>
+        <div class="board-items-list">
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="board-item">
+                <a href="../detail.html">
+                    <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <h3>Development Task</h3>
+                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="board-row">
+        <div class="board-title">
+            <img class="dropdown icon-xm" src="./assets/icons/chevron-down-solid.svg" alt="">
+            <h3>Update feed (Inbox)</h3>
+            <span class="update-count">10</span>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+    $('.board-title img.dropdown').on('click',function(){
+        $(this).toggleClass('rotate')
+        $('.board-items-list',$(this).parent().parent()).toggleClass('active')
+    })
+
+    $('.board-item .icon-star').on('click',function(){
+        event.preventDefault();
+        $(this).toggleClass('fa-star-o fa-star active')
+    })
+
+    // $('.board-item a').on('click',function(){
+    //     $("#workspace").load("board-detail.html")
+    // })
+
+</script>
+    

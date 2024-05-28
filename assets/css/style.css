@@ -217,8 +217,14 @@ ul{
 .primary-blue-btn:hover{
     background-color: var(--background-color-blue-hover);
 }
-
 .primary-list-item{
+
+    &.active{
+        background-color: var(--primary-selected-color);
+    }
+
+}
+.primary-list-item a{
     position: relative;
     color: var(--primary-text-color);
     padding-left: 8px;
@@ -247,9 +253,6 @@ ul{
         background-color: var(--primary-background-hover);
     }
     
-    &.active{
-        background-color: var(--primary-selected-color);
-    }
 }
 
 
@@ -412,6 +415,7 @@ header .account-info .user-avatar-wrapper {
 }
 .application .slider{
     border-top-right-radius: 8px;
+    height: 100%;
     width: 200px;
     min-width: 200px;
     background-color: white;
@@ -812,6 +816,10 @@ header .account-info .user-avatar-wrapper {
 
     & .task-name.tooltip-wrapper{
         width: 200px;
+    }
+
+    & .task-column.task-more{
+        flex: 1;
     }
 
     & .task-info-wrapper{
