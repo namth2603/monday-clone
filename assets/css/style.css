@@ -364,6 +364,8 @@ header{
 
     & .logo{
         height: 40px;
+        width: 40px;
+        object-fit: cover;
     }
 
     & .option-btn{
@@ -749,17 +751,20 @@ header .account-info .user-avatar-wrapper {
 }
 
 .content-board{
+    width: max-content;
     padding-top: 8px;
     flex: 1;
 }
 
-.task-row-wrapper{
+.content-board .task-row-wrapper{
     display: flex;
-    align-items: center;
-    height: 60px;
+    flex-direction: column;
     margin-bottom: 20px;
+    position: relative;
 
     & .more-action{
+        position: absolute;
+        left: -32px;
         display: flex;
         align-items: center;
         border-radius: var(--primary-border-small);
@@ -776,19 +781,15 @@ header .account-info .user-avatar-wrapper {
     
 }
 
-.task-row{
+
+.content-board .task-row{
+    
     cursor: grab;
     display: flex;
-    align-items: center;
-    height: 100%;
-    flex: 1;
 
-    & input{
-        width: 200px;
-        font-size: 20px;
-        font-weight: 600;
-        border-radius: var(--primary-border-small);
-        border: 1px solid transparent;
+    &.header{
+        height: 60px;
+        z-index: 999;
     }
 
     & input:hover{
@@ -824,7 +825,7 @@ header .account-info .user-avatar-wrapper {
 
     & .task-info-wrapper{
         position: sticky;
-        left: 0;
+        left: 32px;
         display: flex;
         flex-direction: row;
         z-index: 5;
@@ -833,15 +834,12 @@ header .account-info .user-avatar-wrapper {
     }
 
     & .task-info{
-        display: grid;
-        grid-template-columns: 28px 1fr;
+        
         z-index: 5;
         background-color: white;
         width: 400px;
         height: 100%;
-        border: 1px solid var(--primary-border-color);
-        border-top-left-radius: var(--primary-border-small);
-        border-bottom-left-radius: var(--primary-border-small);
+        
     }
 
     & .task-info .summary-info{
@@ -855,52 +853,112 @@ header .account-info .user-avatar-wrapper {
     & .task-info > div{
         align-content: center;
     }
+}
 
-
+.content-board .task-row.header{
+    margin-left: 32px;
+    & input{
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: var(--primary-border-small);
+        border: 1px solid transparent;
+    }
 }
 
 
-.task-row-wrapper:nth-child(1) .task-row .task-info{
-    border-left: 5px solid orange;
+
+.content-board .task-row.header .task-info{
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    border: 1px solid var(--primary-border-color);
+    border-top-left-radius: var(--primary-border-small);
+    border-bottom-left-radius: var(--primary-border-small);
+}
+
+
+
+.content-board .task-row.table-items-container{
+    position: relative;
+    flex-direction: column;
+
+    & .table-title-wrapper{
+        height: 50px;
+        top: 0;
+    }
+
+    & .table-title-wrapper .table-title{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        left: 32px;
+        width: fit-content;
+        height: 50px;
+        gap: 10px;
+    }
+
+    & .table-title-wrapper .table-title span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+.content-board .task-row.table-items-container .row-item{
+    margin-left:32px;
+    height: 36px;
+    display: flex;
+
+    & .task-info{
+        border-right: 1px solid var(--primary-border-color);
+        border-bottom: 1px solid var(--primary-border-color);
+    }
+
+    & .task-column{
+        border-top: none;
+    }
+}
+
+
+.content-board .task-row-wrapper:nth-child(1) .task-row.header .task-info{
+    border-left: 5px solid var(--background-color-blue);
 
     & input{
-        color: orange;
+        color: var(--background-color-blue);
     }
 
     & i{
         cursor: pointer;
-        color: orange;
+        color: var(--background-color-blue);
     }
 }
 
-.task-row-wrapper:nth-child(2) .task-row .task-info{
-    border-left: 5px solid palevioletred;
+.content-board .task-row-wrapper:nth-child(2) .task-row.header .task-info{
+    border-left: 5px solid darkcyan;
 
     & input{
-        color: palevioletred;
+        color: darkcyan;
     }
 
     & i{
         cursor: pointer;
-        color: palevioletred;
+        color: darkcyan;
     }
 }
 
-.task-row-wrapper:nth-child(3) .task-row .task-info{
-    border-left: 5px solid plum;
+.content-board .task-row-wrapper:nth-child(3) .task-row.header .task-info{
+    border-left: 5px solid darkorange;
 
     & input{
-        color: plum;
+        color: darkorange;
     }
 
     & i{
         cursor: pointer;
-        color: plum;
+        color: darkorange;
     }
 
 }
 
-.task-row-wrapper:nth-child(4) .task-row .task-info{
+.content-board .task-row-wrapper:nth-child(4) .task-row.header .task-info{
     border-left: 5px solid slateblue;
 
     & input{
@@ -913,7 +971,7 @@ header .account-info .user-avatar-wrapper {
     }
 }
 
-.task-row-wrapper:nth-child(5) .task-row .task-info{
+.content-board .task-row-wrapper:nth-child(5) .task-row.header .task-info{
     border-left: 5px solid yellowgreen;
 
     & input{
@@ -926,7 +984,7 @@ header .account-info .user-avatar-wrapper {
     }
 }
 
-.task-row-wrapper:nth-child(6) .task-row .task-info{
+.content-board .task-row-wrapper:nth-child(6) .task-row.header .task-info{
     border-left: 5px solid teal;
 
     & input{
