@@ -400,7 +400,6 @@ header .account-info .user-avatar-wrapper {
 }
 
 .application .workspace{
-    flex: 1;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -754,6 +753,7 @@ header .account-info .user-avatar-wrapper {
 
 .content-board .task-row{
     
+    cursor: grab;
     display: flex;
 
     &.header{
@@ -792,6 +792,13 @@ header .account-info .user-avatar-wrapper {
         flex: 1;
     }
 
+    & .task-column.task-info-wrapper{
+        position: sticky;
+        left: 32px;
+        z-index: 5;
+        width: 400px;
+    }
+
     & .task-info{
         
         z-index: 5;
@@ -813,13 +820,6 @@ header .account-info .user-avatar-wrapper {
         align-content: center;
     }
 }
-.task-info-wrapper{
-    position: sticky;
-    left: 32px;
-    z-index: 5;
-    width: 400px;
-    
-}
 
 .content-board .task-row.header{
     margin-left: 32px;
@@ -832,12 +832,11 @@ header .account-info .user-avatar-wrapper {
     }
 }
 
-.content-board .task-row .task-info{
+.content-board .task-row.header .task-info{
     display: grid;
     grid-template-columns: 28px 1fr;
     width: 400px;
     border: 1px solid var(--primary-border-color);
-    align-items: center;
     border-top-left-radius: var(--primary-border-small);
     border-bottom-left-radius: var(--primary-border-small);
 }
