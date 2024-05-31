@@ -829,6 +829,7 @@ header .account-info .user-avatar-wrapper {
         display: flex;
         flex-direction: row;
         z-index: 5;
+        width: 400px;
         height: 100%;
         align-items: center;
     }
@@ -837,7 +838,7 @@ header .account-info .user-avatar-wrapper {
         
         z-index: 5;
         background-color: white;
-        width: 400px;
+        width: 100%;
         height: 100%;
         
     }
