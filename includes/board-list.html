@@ -2,7 +2,7 @@
 <div class="board-list-wrapper">
     <div class="board-row">
         <div class="board-title">
-            <img class="dropdown icon-xm" src="./assets/icons/chevron-down-solid.svg" alt="">
+            <i class="dropdown fa-regular fa-angle-right"></i>
             <h3>Recently visited</h3>
         </div>
         <div class="board-items-list">
@@ -10,9 +10,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -21,9 +21,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -32,9 +32,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -43,9 +43,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -54,9 +54,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -65,9 +65,9 @@
                 <a href="./detail.html">
                     <img class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
                     <div class="board-item-info">
-                        <img class="icon-xl" src="./assets/icons/calendar-event-svgrepo-com.svg" alt="">
+                        <i class="fa-regular fa-calendar"></i>
                         <h3>Development Task</h3>
-                        <i class="icon-star fa fa-lg fa-star-o" aria-hidden="true"></i>
+                        <i class="icon-star fa-regular fa-star"></i>
                     </div>
                 </a>
             </div>
@@ -78,7 +78,7 @@
 
     <div class="board-row">
         <div class="board-title">
-            <img class="dropdown icon-xm" src="./assets/icons/chevron-down-solid.svg" alt="">
+            <i class="dropdown fa-regular fa-angle-right"></i>
             <h3>Update feed (Inbox)</h3>
             <span class="update-count">10</span>
         </div>
@@ -88,14 +88,15 @@
 
 <script>
 
-    $('.board-title img.dropdown').on('click',function(){
+    $('.board-title i.dropdown').on('click',function(){
         $(this).toggleClass('rotate')
         $('.board-items-list',$(this).parent().parent()).toggleClass('active')
     })
 
     $('.board-item .icon-star').on('click',function(){
         event.preventDefault();
-        $(this).toggleClass('fa-star-o fa-star active')
+        $(this).toggleClass('fa-regular fa-star')
+        $(this).toggleClass('fa-solid fa-star active')
     })
 
     // $('.board-item a').on('click',function(){

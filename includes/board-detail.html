@@ -2,21 +2,21 @@
     <div class="title-board">
         <div class="info primary-btn">
             <span>Development Task</span>
-            <img class="icon-xl" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+            <i class="fa-regular fa-angle-down"></i>
         </div>
     </div>
     <div class="action-board">
         <button class="integrate-btn primary-btn">
-            <img class="icon-l" src="./assets/icons/plug-plugin-svgrepo-com.svg" alt="">
+            <i class="fa-regular fa-plug"></i>
             <span>Integrate</span>
         </button>
         <button class="automate-btn primary-btn">
-            <img class="icon-l" src="./assets/icons/robot-svgrepo-com.svg" alt="">
+            <i class="fa-light fa-robot"></i>
             <span>Automate</span>
         </button>
         <div class="tooltip-wrapper">
             <button class="discussion-btn primary-btn tooltip" title="">
-                <img class="icon-l" src="./assets/icons/chat-circle-dots-svgrepo-com.svg" alt="">
+                <i class="fa-sharp fa-regular fa-comment"></i>
             </button>
             <span class="tooltip-ms bottom">Start a Board discussion</span>
         </div>
@@ -30,7 +30,7 @@
         </button>
 
         <button class="option-btn primary-btn">
-            <img class="icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+            <i class="fa-regular fa-ellipsis"></i>
         </button>
         
     </div>
@@ -38,18 +38,17 @@
         <ul>
             <li class="item active">
                 <div class="info">
-                    <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon-l">
+                    <i class="fa-regular fa-house"></i>
                     <span>Main Table</span>
                 </div>
-                
-                <img class="more-action icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+                <i class="more-action fa-regular fa-ellipsis"></i>
             </li>
             <li class="item">
                 <div class="info">
-                    <img src="./assets/icons/house-01-svgrepo-com.svg" alt="" class="icon-l">
+                    <i class="fa-regular fa-house"></i>
                     <span>Main Table</span>
                 </div>
-                <img class="more-action icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="" >
+                <i class="more-action fa-regular fa-ellipsis"></i>
             </li>
         </ul>
     </div>
@@ -60,39 +59,41 @@
                 New item
             </div>
             <div class="dropdown-btn">
-                <img class="icon-l" src="./assets/icons/caret-down-md-svgrepo-com-white.svg" alt="">
+                <i class="fa-regular fa-angle-down"></i>
             </div>
         </button>
         <div class="option-wrapper">
             <div class="search-wrapper">
-                <label for="search-item"><img class="icon-l" src="./assets/icons/search-magnifying-glass-svgrepo-com.svg" alt=""></label>
+                <label for="search-item">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </label>
                 
                 <input type="text" id="search-item" placeholder="Search">
             </div>
             <button class="person-btn primary-btn">
-                <img class="icon-l" src="./assets/icons/person-account-circle-svgrepo-com.svg" alt="">
+                <i class="fa-regular fa-user"></i>
                 <span>Person</span>
             </button>
             <button class="filter-btn-wrapper primary-btn">
                 <div class="filter-btn">
-                    <img class="icon-l" src="./assets/icons/filter-svgrepo-com.svg" alt="">
+                    <i class="fa-regular fa-filter"></i>
                     <span>Filter</span>
                 </div>
                 <div class="dropdown-btn">
-                    <img class="icon-l" src="./assets/icons/caret-down-md-svgrepo-com.svg" alt="">
+                    <i class="fa-regular fa-angle-down"></i>
                 </div>
                 
             </button>
             <button class="sort-btn primary-btn">
-                <img class="icon-l" src="./assets/icons/sort-svgrepo-com.svg" alt="">
+                <i class="fa-regular fa-arrow-down-arrow-up"></i>
                 <span>Sort</span>
             </button>
             <button class="hide-btn primary-btn">
-                <img class="icon-l" src="./assets/icons/hide-svgrepo-com.svg" alt="">
+                <i class="fa-regular fa-eye-slash"></i>
                 <span>Hide</span>
             </button>
             <button class="more-btn primary-btn">
-                <img class="icon-l" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+                <i class="fa-regular fa-ellipsis"></i>
             </button>
         </div>
             
@@ -101,11 +102,11 @@
 <div class="content-board">
     <div class="task-row-wrapper">
         <div class="task-row header">
-            <div class="task-info-wrapper">
+            <div class="task-info-wrapper ">
                 <div class="more-action">
-                    <img class="icon-m" src="./assets/icons/three-dots-line-svgrepo-com.svg" alt="">
+                    <i class="fa-regular fa-ellipsis"></i>
                 </div>
-                <div class="task-info">
+                <div class="task-info border-tl border-bl">
                     <div class="collapse-btn">
                         <div class="tooltip-wrapper">
                             <div class="tooltip">
@@ -143,7 +144,7 @@
             <div class="task-column task-more">column</div>
         </div>
         <div class="task-row table-items-container">
-            <div class="table-title-wrapper">
+            <div class="table-title-wrapper ">
                 <div class="table-title">
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     <span>Task 1</span>
@@ -151,7 +152,33 @@
             </div>
             <div class="table-items-wrapper">
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info border-tl ">
+                        <div class="collapse-btn">
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <span class="tooltip-ms bottom">Collapse</span>
+                            </div>
+                        </div>
+                        <span>Item</span>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div class="task-column task-person">Person</div>
+                    <div class="task-column">status</div>
+                    <div class="task-column">deadline</div>
+                    <div class="task-column">timetracking</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column task-more">column</div>
+                </div>
+                <div class="row-item">
+                    <div class="task-column task-info">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -174,7 +201,7 @@
                     <div class="task-column task-more">column</div>
                 </div>
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -197,7 +224,7 @@
                     <div class="task-column task-more">column</div>
                 </div>
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -220,7 +247,7 @@
                     <div class="task-column task-more">column</div>
                 </div>
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -243,7 +270,7 @@
                     <div class="task-column task-more">column</div>
                 </div>
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -266,7 +293,30 @@
                     <div class="task-column task-more">column</div>
                 </div>
                 <div class="row-item">
-                    <div class="task-info">
+                    <div class="task-column task-info">
+                        <div class="collapse-btn">
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <span class="tooltip-ms bottom">Collapse</span>
+                            </div>
+                        </div>
+                        <span>Item</span>
+                    </div>
+                    <div class="task-column task-person">Person</div>
+                    <div class="task-column">status</div>
+                    <div class="task-column">deadline</div>
+                    <div class="task-column">timetracking</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column">column</div>
+                    <div class="task-column task-more">column</div>
+                </div>
+                <div class="row-item">
+                    <div class="task-column task-info border-bl">
                         <div class="collapse-btn">
                             <div class="tooltip-wrapper">
                                 <div class="tooltip">
@@ -297,7 +347,7 @@
     
 <div class="add-group-wrapper">
     <button class="primary-btn">
-        <img class="icon-l" src="./assets/icons/plus-large-svgrepo-com.svg" alt="">
+        <i class="fa-regular fa-plus"></i>
         <span>Add new group</span>
     </button>
 </div>

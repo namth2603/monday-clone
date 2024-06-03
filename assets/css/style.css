@@ -735,12 +735,15 @@ header .account-info .user-avatar-wrapper {
     & .more-action{
         position: absolute;
         left: -32px;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
         align-items: center;
         border-radius: var(--primary-border-small);
         opacity: 0;
         padding: 5px;
         margin: 0 5px;
+        
     }
 
     & .more-action:hover{
@@ -771,7 +774,7 @@ header .account-info .user-avatar-wrapper {
 
     & .task-column{
         position: sticky;
-        left: 100px;
+        left: 32px;
         min-width: 150px;
         display: flex;
         padding: 0 6px;
@@ -838,7 +841,12 @@ header .account-info .user-avatar-wrapper {
     width: 400px;
     border: 1px solid var(--primary-border-color);
     align-items: center;
+}
+
+.border-tl{
     border-top-left-radius: var(--primary-border-small);
+}
+.border-bl{
     border-bottom-left-radius: var(--primary-border-small);
 }
 
@@ -922,14 +930,13 @@ header .account-info .user-avatar-wrapper {
     gap: var(--primary-gap-flex-s);
 
 
-    & img.dropdown{
-        transform: rotateZ(-90deg);
+    & i.dropdown{
         cursor: pointer;
         transition: all 0.1s linear;
     }
 
-    &  img.dropdown.rotate {
-        transform: rotateZ(0deg);
+    &  i.dropdown.rotate {
+        transform: rotateZ(90deg);
         cursor: pointer;
     }
 
