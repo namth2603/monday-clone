@@ -54,14 +54,14 @@
     </div>
 
     <div class="option-board">
-        <button class="new-btn-wrapper">
-            <div class="new-btn">
+        <div class="new-btn-wrapper">
+            <div class="primary-blue-btn new-btn">
                 New item
             </div>
-            <div class="dropdown-btn">
+            <div class="primary-blue-btn dropdown-btn">
                 <i class="fa-regular fa-angle-down"></i>
             </div>
-        </button>
+        </div>
         <div class="option-wrapper">
             <div class="search-wrapper">
                 <label for="search-item">
@@ -101,10 +101,11 @@
     <div class="task-row-wrapper">
         <div class="task-row header">
             <div class="row-item">
-                <div class="more-action">
-                    <i class="fa-regular fa-ellipsis"></i>
-                </div>
-                <div class="task-column task-info">
+                
+                <div class="task-column">
+                    <div class="more-action">
+                        <i class="fa-regular fa-ellipsis"></i>
+                    </div>
                     <i class="fa-solid fa-angle-up padding-10 extend-table-btn"></i>
                     <p class="h2">Task 1</p>
                     <div class="summary-info">
@@ -113,7 +114,7 @@
                         <span>21 Subitems</span>
                     </div>
                 </div>
-                <div class="task-column task-person">Person</div>
+                <div class="task-column">Person</div>
                 <div class="task-column">status</div>
                 <div class="task-column">deadline</div>
                 <div class="task-column">timetracking</div>
@@ -122,7 +123,7 @@
                 <div class="task-column">column</div>
                 <div class="task-column">column</div>
                 <div class="task-column">column</div>
-                <div class="task-column task-more">column</div>
+                <div class="task-column">column</div>
             </div>
             
         </div>
@@ -133,10 +134,10 @@
                     <p class="h2">Task 1</p>
                 </div>
                 <div class="row-item">
-                    <div class="task-column task-info">
+                    <div class="task-column">
                         <span>Item</span>
                     </div>
-                    <div class="task-column task-person">Person</div>
+                    <div class="task-column">Person</div>
                     <div class="task-column">status</div>
                     <div class="task-column">deadline</div>
                     <div class="task-column">timetracking</div>
@@ -145,35 +146,505 @@
                     <div class="task-column">column</div>
                     <div class="task-column">column</div>
                     <div class="task-column">column</div>
-                    <div class="task-column task-more">column</div>
+                    <div class="task-column">column</div>
                 </div>
             </div>
             <div class="table-items-wrapper">
-                <div class="row-item">
-                    <div class="more-action">
-                        <i class="fa-regular fa-ellipsis "></i>
-                    </div>
-                    <div class="task-column task-info">
-                        <i class="fa-solid fa-angle-down padding-10"></i>
-                        <span>Item</span>
-                        <div class="discussion">
-                            <div class="wrapper">
-                                <i class="fa-regular fa-comment"></i>
-                                <span class="count">9</span>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
                             </div>
-                            
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
                         </div>
                     </div>
-                    <div class="task-column task-person">Person</div>
-                    <div class="task-column">status</div>
-                    <div class="task-column">deadline</div>
-                    <div class="task-column">timetracking</div>
-                    <div class="task-column">column</div>
-                    <div class="task-column">column</div>
-                    <div class="task-column">column</div>
-                    <div class="task-column">column</div>
-                    <div class="task-column">column</div>
-                    <div class="task-column task-more">column</div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-item-wrapper">
+                    <div class="row-item">
+                        <div class="task-column">
+                            <i class="fa-solid fa-angle-down padding-10"></i>
+                            <span>Item</span>
+                            <div class="discussion">
+                                <div class="wrapper">
+                                    <i class="fa-light fa-comment fa-sm"></i>
+                                    <span class="count">9</span>
+                                </div>
+                                
+                            </div>
+                            <div class="more-action">
+                            <i class="fa-regular fa-ellipsis "></i>
+                        </div>
+                        </div>
+                        <div class="task-column">Person</div>
+                        <div class="task-column">status</div>
+                        <div class="task-column">deadline</div>
+                        <div class="task-column">timetracking</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                        <div class="task-column">column</div>
+                    </div>
+                    <div class="table-subitems-wrapper">
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                        <div class="row-item">
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                            <div class="task-column">column</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,6 +698,11 @@
                 $('.tab-board .item.active').removeClass('active')
                 $(this).addClass('active')
             }
+        })
+
+        $('.table-items-wrapper .row-item .task-column:first-child .fa-angle-down').on('click',function(){
+            $('~ ,table-subitems-wrapper',$(this).parent().parent()).toggleClass('active')
+            $(this).toggleClass('rotate')
         })
     })
 </script>
