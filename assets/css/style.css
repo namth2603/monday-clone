@@ -164,6 +164,10 @@ ul{
     padding: 5px;
 }
 
+.margin-5{
+    margin: 5px;
+}
+
 .primary-btn{
     display: flex;
     align-items: center;
@@ -424,7 +428,7 @@ header .account-info .user-avatar-wrapper {
     gap: 12px;
 
     & .primary-btn{
-        padding: 0 10px 0 4px;
+        padding: 0 10px;
         height: 36px;
         width: 100%;
     }
@@ -529,6 +533,7 @@ header .account-info .user-avatar-wrapper {
     }
 
     & .title-board .info span{
+        max-width: 250px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -619,6 +624,13 @@ header .account-info .user-avatar-wrapper {
     & .more-action:hover{
         background-color: var(--primary-background-hover);
     }
+
+    & span {
+        width: 100px;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .workspace .header-board .option-board{
@@ -633,6 +645,7 @@ header .account-info .user-avatar-wrapper {
     display: flex;
 
     & .new-btn{
+        text-wrap: nowrap;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: solid 1px var(--background-color-blue-hover);
@@ -751,9 +764,7 @@ header .account-info .user-avatar-wrapper {
 }
 .content-board .task-row .row-item .task-column:first-child{
     z-index: 5;
-    background-color: white;
     width: 400px;
-    height: 100%;
 
     & .more-action{
         position: absolute;
@@ -767,27 +778,60 @@ header .account-info .user-avatar-wrapper {
         padding: 5px;
         margin: 0 5px;
         z-index: 9999;
+        cursor: pointer;
     }
 
     & .more-action:hover{
-        cursor: pointer;
         background-color: var(--primary-background-hover);
     }
+
+    & .option{
+        height: 100%;
+        width: 36px;
+        border-right: 1px solid var(--primary-border-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .option input{
+        cursor: pointer;
+      }
+    
 }
 
 .content-board .task-row .row-item .task-column:first-child::after{
     content: '';
     width: 100px;
     position: absolute;
-    top: -2px;
-    bottom: -4px;
-    left: -104px;
+    top: -1px;
+    bottom: -6px;
+    left: -105px;
     background-color: white;
     z-index: 99;
 }
 
-.content-board .task-row.header .task-column{
+.content-board .task-row .row-item.border-top .task-column{
     border-top: 1px solid var(--primary-border-color);
+}
+
+.content-board .task-row .row-item .task-column .header-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.add-item-wrapper .row-item{
+    transform: translateY(-1px);
+}
+.add-item-wrapper .row-item .task-column{
+    border-top: 1px solid var(--primary-border-color);
+}
+
+
+.content-board .task-row .row-item.add-row .task-column:first-child{
+    border-right: none;
+    border-bottom-left-radius: 6px;
+    justify-content: flex-start;
 }
 
 .content-board .task-row.header .row-item .task-column:first-child{
@@ -801,7 +845,7 @@ header .account-info .user-avatar-wrapper {
     }
 }
 
-.content-board .table-title-wrapper .table-title{
+.content-board .title-wrapper .table-title{
         display: flex;
         align-items: center;
         position: sticky;
@@ -810,15 +854,16 @@ header .account-info .user-avatar-wrapper {
         padding-left: 5px;
         padding-top: 3px;
 }
-.content-board .table-title-wrapper .task-column{
-    border-top: 1px solid var(--primary-border-color);
-}
-.content-board .table-title-wrapper .row-item .task-column:first-child{
+.content-board .title-wrapper .row-item .task-column:first-child{
     border-top-left-radius: var(--primary-border-small);
 }
 .content-board p.h2{
     font-size: 20px;
     font-weight: 600;
+    width: 300px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content-board .task-row.table-items-container{
@@ -836,14 +881,18 @@ header .account-info .user-avatar-wrapper {
         z-index: 99;
     }
 
-    &:hover .task-column:first-child .more-action{
 
+    &:hover .task-column:first-child .more-action{
         opacity: 1;
     }
 
     & .task-column:last-child{
         flex: 1;
     }
+}
+
+.content-board .row-item-wrapper .row-item:hover .task-column {
+    background-color: aliceblue;
 }
 
 .content-board .task-row.header .row-item{
@@ -868,10 +917,7 @@ header .account-info .user-avatar-wrapper {
         justify-content: center;
         width: 65px;
         color: #676879;
-        
     }
-
-    
 
     & .discussion .wrapper{
         position: relative;
@@ -898,6 +944,13 @@ header .account-info .user-avatar-wrapper {
 
     & .discussion.active .count{
         background-color: var(--background-color-blue);
+    }
+
+    & .name-row-wrapper{
+        width: 240px;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -964,7 +1017,6 @@ header .account-info .user-avatar-wrapper {
 }
 
 .board-list-wrapper .board-items-list .board-item {
-
     padding: 8px;
     border: 1px solid var(--primary-border-color);
     border-radius: var(--primary-border-small);
@@ -1011,10 +1063,14 @@ header .account-info .user-avatar-wrapper {
     & .row-item .task-column{
         left: 64px;
     }
+
+    & .row-item .task-column:first-child .name-row-wrapper{
+        padding-left: 10px;
+    }
 }
 
-.task-row .table-subitems-wrapper .row-item:first-child .task-column{
-    border-top: 1px solid var(--primary-border-color);
+.task-row .table-subitems-wrapper .row-item:first-child:hover .task-column{
+    background-color: white;
 }
 .task-row .table-subitems-wrapper .row-item .task-column:first-child{
     width: 368px;
@@ -1026,12 +1082,33 @@ header .account-info .user-avatar-wrapper {
     width: 32px;
     left: -35px;
     top: -27px;
-    border-left: 1px solid #0060b9;
     border-bottom: 1px solid #0060b9;
     border-bottom-left-radius: 12px;
     z-index: 999;
+    pointer-events: none;
 }
 
 .fa-angle-down.rotate{
     transform: rotateZ(180deg);
+}
+
+.table-subitems-wrapper .row-item .task-column:first-child .line{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.table-subitems-wrapper .row-item .task-column:first-child .line::before{
+    content: '';
+    width: 1px;
+    background-color: #0060b9;
+    height: 80px;
+    position: absolute;
+    top: -20px;
+    left: -35px;
+    z-index: 99999;
+}
+
+.content-board .task-row .table-subitems-wrapper .row-item .task-column:first-child .more-action{
+    left: -72px;
 }
