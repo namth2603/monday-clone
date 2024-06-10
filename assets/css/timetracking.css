@@ -1,0 +1,256 @@
+
+[x-cloak] {
+    display: none;
+}
+body {
+    font-family: sans-serif;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+.time-tracking-app {
+    max-width: 200px;
+    margin: 40px auto 0;
+}
+.time-tracking-head {
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    /*position: fixed;*/
+    /*width: 406px;*/
+}
+.time-tracking-log-item {
+    /*position: relative;*/
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.time-tracking-history-table {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    height: 86.5%;
+    background: #fff;
+}
+.time-tracking-history {
+    position: absolute;
+    bottom: 0;
+    width: 408px;
+    left: 50%;
+    top: 101%;
+    z-index: 99;
+    border: 1px solid #d0d4e4;
+    min-height: 360px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.32);
+    transform: translateX(-50%);
+    /*display: none;*/
+}
+.time-tracking-section-manual {
+    margin: 6px 46px 12px;
+    font-size: 16px;
+    border: 1px dashed #c3c6d4;
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.time-tracking-section-manual:hover {
+    border-color: #0073ea;
+}
+.time-tracking-active-session {
+    text-align: center;
+    border-bottom: 1px solid #c3c6d4;
+    padding: 10px 0;
+    margin: 0 18px 16px;
+}
+.time-tracking-session{
+    font-size: 24px;
+}
+.time-tracking-active-session p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.time-tracking-session span{
+    font-size: 24px;
+    color: #444;
+}
+.time-tracking-section-manual p {
+    font-size: 15px;
+}
+.time-tracking-history-table::-webkit-scrollbar {
+    display: none;
+}
+.time-tracking-history-table:before, .time-tracking-add-manually::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #f6f7fb;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-left-color: #d0d4e4;
+    border-top-color: #d0d4e4;
+    transform: translateX(-50%) rotate(45deg);
+    top: -7px;
+    right: 188px;
+    z-index: 999;
+}
+
+.time-tracking-history-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #f6f7fb;
+}
+.time-tracking-history-list {
+    padding: 18px 32px;
+    background: #fff;
+}
+.time-tracking-history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+.time-tracking-history-item-child {
+    display: flex;
+    align-items: center;
+}
+.time-tracking-history-member img {
+    width: 28px;
+    margin-right: 12px;
+    border-radius: 15px;
+}
+.time-tracking-history-duration .time-separate {
+    margin: 0 6px;
+}
+.time-tracking-log-icon .icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    justify-content: center;
+    font-size: 8px;
+    color: white;
+    background-color: var(--background-color-blue);
+}
+.time-tracking-log-icon .icon:hover {
+    background-color: var(--background-color-blue-hover);
+}
+.time-tracking-log-icon-wrapper {
+    text-align: center;
+    flex: 1;
+    height: 25px;
+    cursor: pointer;
+}
+.time-tracking-item-total {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.time-tracking-add-manually-back {
+    cursor: pointer;
+    color: #0073ea;
+}
+.time-tracking-duration-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.time-tracking-duration-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.duration-time-item {
+    width: 46%;
+}
+.time-tracking-add-manually {
+    padding: 28px 50px 0;
+    background: #fff;
+}
+.duration-time-item input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #c3c6d4;
+    border-radius: 4px;
+    padding: 0 12px;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.duration-time-item-label {
+    margin-bottom: 8px;
+}
+
+.time-tracking-manually-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0073ea;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.time-tracking-manually-button:hover {
+    background: #0761bf;
+}
+.time-tracking-manually-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.time-tracking-manually-total-time span{
+    font-size: 20px;
+}
+
+.add-by-manually, .manually-validation-error {
+    color: #ff3333;
+}
+.time-log-icon-delete {
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background: #888;
+    border-radius: 50%;
+    margin-right: 2px;
+    cursor: pointer;
+    visibility: hidden;
+    display: inline-flex;
+}
+.time-log-icon-delete:hover {
+    background: #0073ea;
+}
+.time-log-icon-delete svg {
+    width: 10px;
+}
+.time-tracking-history-item:hover > .time-tracking-history-time-total > .time-log-icon-delete {
+    visibility: visible;
+}
+
+
+
+
+
