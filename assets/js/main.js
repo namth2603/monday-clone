@@ -20,13 +20,6 @@
             addManuallyError: null,
             timeTrackingList: [
                 {
-                    "id": 1,
-                    "time_tracking": 0,
-                    "running": false,
-                    "time_duration_start": null,
-                    "time_tracking_log": []
-                },
-                {
                     "id": 3,
                     "time_tracking": 18,
                     "running": true,
