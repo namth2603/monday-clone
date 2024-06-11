@@ -18,7 +18,7 @@
             timeTrackingManually: [],
             rangeTotalManually: 0,
             addManuallyError: null,
-            timeTrackingList: [
+            timeTrackingList:
                 {
                     "id": 3,
                     "time_tracking": 18,
@@ -46,7 +46,7 @@
                         }
                     ]
                 }
-            ],
+            ,
 
             init() {
                 let self = this;
@@ -57,7 +57,7 @@
                 this.timeTrackingList = localStorage.getItem("timeTrackingData") ?
                     JSON.parse(localStorage.getItem("timeTrackingData")) : this.timeTrackingList;
 
-                self.timeTrackingList.forEach((item) => {
+                let item = self.timeTrackingList
                     if(item.running) {
                         let totalLogTime = 0;
                         if(item.time_tracking_log.length) {
@@ -71,7 +71,6 @@
                         self.timeInterval(item);
                         self.timeIntervalSession(item);
                     }
-                })
 
                 document.addEventListener('click', function() {
                     if (!event.target.closest('.time-tracking-log-item')
