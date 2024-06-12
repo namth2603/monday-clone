@@ -77,53 +77,43 @@ ul{
     margin: 0;
 }
 
-[data-title]:hover:after,
-[data-title]:hover:before{
-    opacity: 1;
-    transition: all 0.1s ease 0.35s;
-    visibility: visible;
-}
-[data-title]:after {
-    content: attr(data-title);
-    background-color: #333;
-    color: #fff;
-    text-wrap: nowrap;
-    position: absolute;
-    padding:10px 15px;
-    top: 135%;
-    left: 50%;
-    height: max-content;
-    white-space: nowrap;
-    border-radius: 6px;
-    opacity: 0;
-    z-index: 99999;
-    visibility: hidden;
-    transform: translateX(-50%);
-}
-[data-title]:before {
-    content: "";
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #333 transparent;
-    opacity: 0;
-    z-index: 99999;
-    visibility: hidden;
-}
-[data-title] {
-    position: relative;
-}
-
 
 #message{
     position: absolute;
-    display: none;
-    width: 50px;
-    height: 100px;
+    height: max-content;
+    z-index: 99999999;
+    transform: translateX(-50%);
+    visibility: hidden;
+    user-select: none;
 }
+#message .message-wrapper{
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    padding:10px 15px;
+    white-space: nowrap;
+    border-radius: 6px;
+
+}
+#message.active{
+    visibility: visible;
+}
+#message.active .message-wrapper{
+    transition: opacity 0.1s ease 0.35s;
+    opacity: 1;
+}
+
+#message .message-wrapper::after{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-color: transparent transparent #333 transparent;
+}
+
 /*[data-title-top]:hover:after,*/
 /*[data-title-top]:hover:before{*/
 /*    opacity: 1;*/
@@ -284,7 +274,7 @@ ul{
 
 .icon-star.fa-star {
     cursor: pointer;
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: black;
     color: white;
 }
@@ -1083,6 +1073,10 @@ header .account-info .user-avatar-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.board-list-wrapper .board-items-list .board-item .board-item-info .board-star-icon{
+    margin-left: auto;
 }
 
 .board-list-wrapper .board-items-list .board-item:hover{
