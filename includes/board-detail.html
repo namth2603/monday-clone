@@ -3393,6 +3393,33 @@
             </li>
         </ul>
     </div>
+    <div class="slide-chat-wrapper" style="overflow-y: scroll;overflow-x: hidden;">
+        <div style="padding: 20px">
+            <input style="width: 100%;border: 1px solid #0073ea;padding: 10px 20px;border-radius: 8px" type="text" placeholder="Write an update">
+        </div>
+        <div class="space-view" style="padding: 20px">
+            <div class="post-wrapper" style="margin-bottom: 16px;border-radius: 8px;border: 1px solid #d0d4e4;min-height: 60px">
+                <div class="post-header" style="padding: 16px 16px 8px;display: flex;align-items: center;gap: 20px">
+                    <div class="user-avatar">
+                        <img class="avatar sz-xl" src="./assets/images/user.webp" alt="">
+                    </div>
+                    <span class="user-name" style="font-size: 16px">
+                        Namth
+                    </span>
+                    <span class="post-date" style="margin-left: auto;">
+                        26 Mar
+                    </span>
+                </div>
+                <div class="post-body" style="padding-top: 8px;padding: 0 15px 15px 15px;font-size: 16px">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+                <div class="post-action" style="padding: 8px 16px;display: flex">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </div>
+            </div>
+            <div class="post-wrapper" style="margin-bottom: 16px;border-radius: 8px;border: 1px solid #d0d4e4;min-height: 60px"></div>
+        </div>
+    </div>
 
 </div>
 
@@ -3426,6 +3453,17 @@
             }
         })
 
+        $('.discussion').on('click',function () {
+            $('.header-board').addClass('chat-slide-opened')
+            $('.workspace').addClass('chat-slide-opened')
+            $('.slide-panel').addClass('opened')
+        })
+
+        $('.close-panel.primary-btn').on('click',function () {
+            $('.header-board').removeClass('chat-slide-opened')
+            $('.workspace').removeClass('chat-slide-opened')
+            $('.slide-panel').removeClass('opened')
+        })
 
         $('.row-item-wrapper .row-item .task-column:first-child .fa-angle-down').on('click',function(){
             $('~ .table-subitems-wrapper',$(this).parent().parent()).toggleClass('active')
