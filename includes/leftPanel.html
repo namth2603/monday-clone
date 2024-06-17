@@ -1,5 +1,11 @@
-<div class="slider">
-    <div class="slider-header">
+<div class="left-panel">
+    <div id="leftPanelSwitcher" class="left-panel-switcher">
+        <button class="primary-btn">
+            <i class="fa-regular fa-angle-right"></i>
+        </button>
+
+    </div>
+    <div class="left-panel-header">
         <a href="./index.html" id="home-btn" class="primary-btn padding-10">
             <i class="fa-regular fa-house"></i> 
             <span>Home</span>
@@ -9,10 +15,10 @@
             <span>My work</span>
         </a>
     </div>
-    <div class="slider-content">
+    <div class="left-panel-content">
         <div class="primary-btn">
             <i class="fa-solid fa-calendar-days"></i>
-                <h2>All Boards</h2>
+                <p class="font-size-4 font-bold">All Boards</p>
                 <i class="fa-regular fa-angle-down"></i>
         </div>
         
@@ -55,9 +61,6 @@
 </div>
 
 <script>
-    function isPlaceholderVisible(input) {
-        return $(input).val() === ""
-    }
 
     $('.list-board .primary-list-item').on('click',function(){
         if(!$(this).hasClass('active')){
@@ -65,20 +68,11 @@
             $(this).addClass('active')
         }
     })
-    
-
-    $('.slider-content .search-wrapper input').on("focus blur input", function() {
-        if (isPlaceholderVisible(this)) {
-            $(this).parent().removeClass('has-text')
-        } else {
-            $(this).parent().addClass('has-text')
-        }
-    });
 
     var listBoard = $(".list-board .primary-list-item")
     var a = location.pathname.split("/")
 
     if (a[a.length - 1] === 'detail.html') {
         $(listBoard[0]).addClass('active')
-}
+    }
 </script>

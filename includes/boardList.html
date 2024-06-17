@@ -1,0 +1,56 @@
+
+<div class="board-list-wrapper">
+    <div class="board-row">
+        <div class="board-title">
+            <i class="dropdown fa-regular fa-angle-right"></i>
+            <span class="font-size-4 font-bold">Recently visited</span>
+        </div>
+        <div class="board-items-list">
+            <div class="board-item">
+                <a href="./detail.html">
+                    <img loading="lazy" class="board-item-img" src="./assets/images/cover-mageplaza-2.webp" alt="">
+                    <div class="board-item-info">
+                        <div class="board-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+
+                        <span class="font-size-5 font-bold tx-nowrap">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                        <div class="board-star-icon">
+                            <i class="icon-star fa-solid fa-star"></i>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="board-row">
+        <div class="board-title">
+            <i class="dropdown fa-regular fa-angle-right"></i>
+            <span class="font-size-4 font-bold">Update feed (Inbox)</span>
+            <span class="update-count">10</span>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+    $('.board-title i.dropdown').on('click',function(){
+        $(this).toggleClass('rotate')
+        $('.board-items-list',$(this).parent().parent()).toggleClass('active')
+    })
+
+    $('.board-item .icon-star').on('click',function(){
+        event.preventDefault();
+        $(this).toggleClass('active')
+    })
+
+    // $('.board-item a').on('click',function(){
+    //     $("#workspace").load("board-detail.html")
+    // })
+
+</script>
+    

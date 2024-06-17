@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/timetracking.css">
     <link rel="icon" href="./favicon.ico">
     <title>Document</title>
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/title.js" async defer></script>
+    <script src="./assets/js/primary.js" async defer></script>
 
 </head>
 <body>
     <div id="navbar">
     </div>
     <div class="application">
-        <div id="slider"></div>
+        <div id="leftPanel"></div>
         <div id="workspace" class="workspace">
-            
         </div>
     </div>
-
 </body>
 <script>
     $("#navbar").load("./includes/navbar.html")
-    $("#slider").load("./includes/slider.html")
-    $("#workspace").load("./includes/board-detail.html")
+    $("#leftPanel").load("./includes/leftPanel.html")
+    $("#workspace").load("./includes/boardDetail.html")
 </script>
 
 </html>
